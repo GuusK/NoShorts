@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "NoShorts",
+    "version": "1.0",
+    "description": "Redirecs all shorts of YouTube to the normal player.",
+    "icons": {
+        "48": "icons/48.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "js": [
+                "noshorts.js"
+            ],
+            "run_at": "document_start"
+        }
+    ]
+}
